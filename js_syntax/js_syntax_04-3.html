@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //클래서 선언하는 코드블럭 class Person{}... this 라고 붙여야지 함수 안에서 작동  Person은 설계도 상의 객체
+      class Person {
+        constructor(name, age) {
+          this.name = name;
+          this.age = age;
+        }
+        print() {
+          console.log(this.name + " : " + this.age);
+        }
+      }
+
+      let tom = new Person("Tom", 20);
+      let Suji = new Person("Suji", 20);
+      //객체데이터는 탐과 수지, 펄슨타입객체
+      //자바의 클래서 설정은 엄청 복잡하다
+
+      console.log(tom);
+      console.log(suji);
+
+      tom.print();
+      suji.print();
+    </script>
+  </head>
+  <body></body>
+</html>

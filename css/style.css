@@ -1,0 +1,300 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+.header {
+  min-width: 1360px;
+  display: flex;
+  justify-content: space-between;
+  padding: 38px 100px 0;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+.gnb-list {
+  display: flex;
+}
+.gnb-item {
+  margin-left: 30px;
+}
+.gnb-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #191919;
+  text-decoration: none;
+}
+
+.gnb-link:hover {
+  color: #10c9c3;
+}
+.section01 {
+  min-width: 1360px;
+  height: 320px;
+  background: #f6f6f6;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+.section-heading {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.section-paragraph {
+  text-align: center;
+  line-height: 1.6;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 0 200px;
+}
+
+.section02 {
+  margin: 100px 0;
+  min-width: 1360px;
+}
+
+.group {
+  display: flex;
+  width: 1360px;
+  /* margin 속성으로 가로방향 가운데 정렬 : width가 정해져야 함 */
+  margin: auto;
+}
+
+/* image : 340 * 300 */
+.figure {
+  width: 340px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.figure-img {
+  height: 300px;
+}
+
+.figure-video {
+  height: 300px;
+}
+
+.footer {
+  min-width: 1360px;
+  background-color: #141414;
+  color: #ffffff;
+  padding: 100px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-wrap {
+  width: 1360px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright-heading {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.footer-sitemap-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 124px;
+  width: 210px;
+}
+
+.footer-sitemap-item {
+  margin-bottom: 15px;
+  margin-left: 30px;
+  width: 75px;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .header,
+  .section01,
+  .section02,
+  .footer {
+    min-width: auto;
+  }
+
+  .group {
+    width: 680px;
+    flex-wrap: wrap;
+  }
+
+  .footer-wrap {
+    width: auto;
+    padding: 0 50px;
+  }
+}
+
+/* smart phone */
+@media screen and (max-width: 767px) {
+  .section01 {
+    padding-top: 80px;
+  }
+
+  .section-heading {
+    font-size: 22px;
+  }
+
+  .section-paragraph {
+    padding: 0 20px;
+  }
+  .group {
+    width: 340px;
+  }
+
+  .footer-wrap {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .footer-sitemap {
+    margin-top: 40px;
+  }
+
+  .footer-sitemap-list {
+    flex-direction: row;
+    width: auto;
+    height: auto;
+  }
+
+  .footer-sitemap-item {
+    margin: 0 5px 5px 0;
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      // if 구문
+      let a = 2;
+      let b = 3;
+
+      if (a > 3) {
+        console.log("참");
+      }
+
+      if (a > 3 && b > 3) {
+        console.log("&&참");
+      } else {
+        console.log("&&거짓");
+      }
+
+      if (a - 1) {
+        console.log("-참");
+      } else {
+        console.log("-거짓");
+      }
+
+      if (b > 5) {
+        console.log("5보다큼");
+      } else if (b > 4) {
+        console.log("4보다큼");
+      } else if (b > 3) {
+        console.log("3보다큼");
+      } else {
+        console.log("3보다같거나작음");
+      }
+
+      let day = "";
+      switch (new Date().getDay()) {
+        case 0:
+          day = "일";
+          break;
+        case 1:
+          day = "월";
+          break;
+        case 2:
+          day = "화";
+          break;
+        case 3:
+          day = "수";
+          break;
+        case 4:
+          day = "목";
+          break;
+        case 5:
+          day = "금";
+          break;
+        case 6:
+          day = "토";
+          break;
+      }
+      console.log(day);
+
+      let today = new Date().getDay();
+      if (today === 0) {
+        day = "일";
+      } else if (today === 1) {
+        day = "월";
+      } else if (today === 2) {
+        day = "화";
+      } else if (today === 3) {
+        day = "수";
+      } else if (today === 4) {
+        day = "목";
+      } else if (today === 5) {
+        day = "금";
+      } else (today === 6) {
+        day = "토";
+      }
+      //if (new Date().getDay() === 0) {     } 너무 길어짐으로 위 방법으로 진행
+
+      for (let i = 0; i < 5; i++) {
+        console.log(i);
+      }
+
+      let sum = 0;
+      for (let i = 1; i <= 10; i++) {
+        sum = sum + i;
+      }
+      console.log(sum);
+
+      let guguddan = 0;
+      for (let i = 1; i <= 9; i++) {
+        gugudan = 2 * i;
+        console.log("2 × " + i + " = " + gugudan);
+      }
+
+      // condition을 true를 직접 넣어주면 무한루프가 됨
+      while (true) {
+        //로그인
+        // 입력 받은 id값과 DB에 저장된 id 리스틑 비교
+        // 입력받은 비밀번호값과 DB에 저장된 비밀번호 리스트 비교
+        // id, 비밀번호가 올바른 값으로 입력될 때 까지 무한히 입력받을 수 있음.
+        // 올바른 값이 입력되면 break 키워드를 사용해서 while 반복을 끝냄.
+
+        if (inputID === dbId && inputPwd === dbPwd) {
+          break;
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

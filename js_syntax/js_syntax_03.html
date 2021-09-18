@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      // 함수선언
+      function myFuntion() {
+        console.log("함수선언");
+      }
+      // 함수 호출
+      myFuntion();
+
+      function print1() {
+        console.log("true funtion");
+      }
+      function print2() {
+        console.log("false funtion");
+      }
+
+      if (3 < 5) {
+        print1();
+      } else {
+        print2();
+      }
+
+      //재사용
+      let a = 0;
+
+      function print3(msg) {
+        let b = msg;
+        console.log(b);
+      }
+
+      if (a > 5) {
+        print3("비교식 참");
+      } else if (a > 4) {
+        print3("비교식 참");
+      } else if (a > 3) {
+        print3("비교식 참");
+      } else {
+        let b = "비교식 거짓";
+        console.log(b);
+      }
+
+      // 매개변수
+      function sum() {
+        console.log(3 + 5);
+      }
+      sum();
+
+      function sum1(a, b) {
+        console.log(a + b);
+      }
+      sum1(3, 4);
+      sum1(1, 2);
+      sum1(2, 5);
+      sum1(0, 3);
+
+      // return
+      function sum2(a, b) {
+        let s = 0;
+        s = a + b;
+        return s;
+      }
+
+      let total = sum2(3, 4);
+      //let total = 7;
+
+      let todayNumber = new Date().getDay();
+      // let todayNumber = 6;
+    </script>
+  </head>
+  <body></body>
+</html>

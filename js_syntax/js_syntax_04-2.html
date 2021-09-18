@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      // 객체
+      const car = {
+        name: "fiat",
+        weight: 800,
+        color: "white",
+        start: function () {}
+      };
+      const person = {
+        firstName: "John",
+        lastName: "doe",
+        id: 5566,
+        fullName: function () {
+          return this.firstName + this.lastName;
+        }
+      };
+
+      console.log(car.name);
+      console.log(person.lastName);
+
+      //JavaScript For In  과 JS Loop For Of 지금은 다루지 않을 것이지만 중요
+      car.name = "BMW";
+
+      console.log(car);
+
+      console.log(person);
+
+      //person.fullName(); 리턴을 콘솔로그에서 함수로 묶어서 출력할 수 있다.
+      console.log(person.fullName());
+
+      let day = new Date();
+
+      console.log(day);
+
+      console.log(day.getFullYear());
+    </script>
+  </head>
+  <body></body>
+</html>
