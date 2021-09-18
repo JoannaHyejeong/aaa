@@ -32,7 +32,7 @@
 
 ## Javascript 활용
 
-- 이벤트
+- 이벤트https://www.w3schools.com/js/js_events.asp
 
 - HTML, CSS와의 관계
 
@@ -65,7 +65,15 @@ https://www.w3schools.com/js/js_let.asp
 
 > ES5 버전에서는 일반 변수 var 만 존재했었는데 ES6 에서는 일반변수 let, 상수변수 const가 추가
 
-### 데이터 타임
+### 데이터 타임 scope(접근 가능 범위)
+
+> Global Scope (전역 범위)
+>
+> Function Scope (함수 범위)
+>
+> Block Scope (블럭 범위)
+
+> var(ES5) 키워드는 Block Scope 개념이 적용되지 않고 전역변수처럼 인식됨
 
 - 숫자
 
@@ -304,3 +312,19 @@ https://www.w3schools.com/js/js_classes.asp
 > 객체 데이터를 여러개 생성할 수 있도록 하는 설계도
 >
 > new 키워드를 사용하여 객체 데이터를 생성
+
+## Javascript 활용
+
+### JS Event https://www.w3schools.com/js/js_events.asp
+
+> Event는 HTML 문서내의 상태 변화에 따른 신호
+
+> Event 종류
+> Mouse Event
+>
+> - Click, Mouse Over, Scroll
+>
+> Keyboard Event
+>
+> - key down(press), change event
+>   focus

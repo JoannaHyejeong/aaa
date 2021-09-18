@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //let 으로 썼다가 var로 바꿔서 실행해봄,,
+      //var은 블럭스코프가 적용되지않음 전역변수로 선언한 것과 똑같다 함수스코프는 있다
+
+      var a = "a"; //Global Scope
+
+      function print() {
+        var b = "b"; // Function Scope
+        for (let i = 0; i < 10; i++) {
+          //i: Block Scope
+          var c = "c"; // Block Scope
+        }
+      }
+
+      if (true) {
+        var d = "d"; // Block Scope
+      }
+
+      print();
+
+      console.log(a);
+      //console.log(b);
+      //console.log(c);
+      console.log(d);
+    </script>
+  </head>
+  <body></body>
+</html>
